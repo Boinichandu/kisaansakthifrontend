@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f4fff4;
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:95%;
+    max-width:1100px;
+    margin:30px auto;
+
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+.header{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+
+}
+
+.header h1{
+
+    color:#2E7D32;
+    font-size:32px;
+
+}
+
+.back-btn{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2E7D32;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ==========================
+      SEARCH SECTION
+========================== */
+
+.search-section{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    gap:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.search-section select{
+
+    flex:1;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.search-section button{
+
+    padding:15px 40px;
+
+    border:none;
+
+    background:#2E7D32;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.search-section button:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ==========================
+      CATEGORY
+========================== */
+
+.category{
+
+    margin-bottom:35px;
+
+}
+
+.category-title{
+
+    background:#2E7D32;
+
+    color:white;
+
+    padding:15px 20px;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+       TIP CARD
+========================== */
+
+.tip-card{
+
+    background:white;
+
+    margin-bottom:15px;
+
+    padding:20px;
+
+    border-left:7px solid #43A047;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.tip-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.tip-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:8px;
+
+    font-size:20px;
+
+}
+
+.stage{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.tip-card p{
+
+    line-height:1.7;
+
+    color:#444;
+
+}
+
+/* ==========================
+       MESSAGE BOXES
+========================== */
+
+.loading,
+.error{
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.search-section{
+
+    flex-direction:column;
+
+}
+
+.search-section button{
+
+    width:100%;
+
+}
+
+.header h1{
+
+    font-size:25px;
+
+}
+
+.category-title{
+
+    font-size:20px;
+
+}
+
+.tip-card h3{
+
+    font-size:18px;
+
+}
+
+}

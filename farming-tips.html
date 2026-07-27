@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kisan Sakthi | Farming Tips</title>
+
+<link rel="stylesheet" href="css/farming-tips.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<button class="back-btn" onclick="history.back()">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h1>🌱 Farming Tips</h1>
+
+</div>
+
+<div class="search-section">
+
+<select id="cropSelect">
+
+<option value="">Select Crop</option>
+
+<option>Cotton</option>
+
+<option>Rice</option>
+
+<option>Maize</option>
+
+<option>Tomato</option>
+
+<option>Chilli</option>
+
+<option>Groundnut</option>
+
+</select>
+
+<button onclick="loadTips()">
+
+Search
+
+</button>
+
+</div>
+
+<div id="tipsContainer">
+
+<div class="loading">
+
+Select a crop to view farming tips.
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/farming-tips.js"></script>
+
+</body>
+</html>

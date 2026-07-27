@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f4fff4;
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+
+}
+
+/* =========================
+        HEADER
+========================= */
+
+.header{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+
+}
+
+.back-btn{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2E7D32;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#1B5E20;
+
+}
+
+.header h1{
+
+    color:#2E7D32;
+    font-size:32px;
+
+}
+
+/* =========================
+      PROFILE CARD
+========================= */
+
+.profile-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    text-align:center;
+
+}
+
+/* =========================
+      PROFILE IMAGE
+========================= */
+
+.profile-image{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    background:#2E7D32;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+/* =========================
+      PROFILE TITLE
+========================= */
+
+.profile-card h2{
+
+    color:#2E7D32;
+    margin-bottom:30px;
+
+}
+
+/* =========================
+      DETAILS
+========================= */
+
+.info{
+
+    text-align:left;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px;
+
+    margin-bottom:15px;
+
+    border-radius:10px;
+
+    background:#F5F5F5;
+
+}
+
+.info-item label{
+
+    font-weight:600;
+
+    color:#2E7D32;
+
+}
+
+.info-item span{
+
+    color:#444;
+
+    font-weight:500;
+
+}
+
+/* =========================
+      BUTTONS
+========================= */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.buttons button{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.edit-btn{
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+
+.edit-btn:hover{
+
+    background:#1B5E20;
+
+}
+
+.logout-btn{
+
+    background:#d32f2f;
+
+    color:white;
+
+}
+
+.logout-btn:hover{
+
+    background:#b71c1c;
+
+}
+
+/* =========================
+      MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.header h1{
+
+    font-size:24px;
+
+}
+
+.profile-card{
+
+    padding:25px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.info-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+}
+
+}

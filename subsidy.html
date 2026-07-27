@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kisan Sakthi | Subsidies</title>
+
+    <link rel="stylesheet" href="css/subsidy.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+    <div class="logo">
+
+        🌾 <span>Kisan Sakthi</span>
+
+    </div>
+
+    <button onclick="history.back()">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back
+
+    </button>
+
+</header>
+
+<!-- Banner -->
+
+<section class="banner">
+
+    <h1>Government Subsidies</h1>
+
+    <p>
+
+        Explore agricultural subsidy schemes, compare market prices,
+        government support and farmer contribution.
+
+    </p>
+
+</section>
+
+<!-- Search -->
+
+<div class="search-box">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by scheme, district or category">
+
+</div>
+
+<!-- Subsidy Cards -->
+
+<div id="subsidyContainer" class="subsidy-container">
+
+    <!-- Loaded from JavaScript -->
+
+</div>
+
+<!-- Loading -->
+
+<div id="loading">
+
+    Loading Subsidies...
+
+</div>
+<!-- ==========================================
+     SUBSIDY DETAILS MODAL
+========================================== -->
+
+<div id="detailsModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<script src="js/subsidy.js"></script>
+
+</body>
+
+</html>

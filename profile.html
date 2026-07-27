@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kisan Sakthi | My Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="header">
+
+        <button class="back-btn" onclick="history.back()">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+        <h1>My Profile</h1>
+
+    </div>
+
+    <!-- ================= PROFILE CARD ================= -->
+
+    <div class="profile-card">
+
+        <!-- Profile Image -->
+
+        <div class="profile-image">
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+        <!-- Name -->
+
+        <h2 id="profileName">Farmer</h2>
+
+        <!-- Details -->
+
+        <div class="info">
+
+            <div class="info-item">
+
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    Name
+                </label>
+
+                <span id="name"></span>
+
+            </div>
+
+            <div class="info-item">
+
+                <label>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </label>
+
+                <span id="email"></span>
+
+            </div>
+
+            <div class="info-item">
+
+                <label>
+                    <i class="fa-solid fa-phone"></i>
+                    Mobile
+                </label>
+
+                <span id="mobile"></span>
+
+            </div>
+
+            <div class="info-item">
+
+                <label>
+                    <i class="fa-solid fa-location-dot"></i>
+                    District
+                </label>
+
+                <span id="district"></span>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button class="edit-btn" onclick="editProfile()">
+
+                <i class="fa-solid fa-pen"></i>
+                Edit Profile
+
+            </button>
+
+            <button class="logout-btn" onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

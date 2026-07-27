@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Talk | Kisan Sakthi</title>
+
+    <link rel="stylesheet" href="css/expert.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <button onclick="goBack()" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <h1>Expert Talk</h1>
+</header>
+
+<section class="hero">
+    <h2>Connect with Agriculture Experts</h2>
+    <p>Search experts by district and mandal</p>
+</section>
+
+<div class="search-section">
+    <select id="districtSelect">
+        <option value="">Select District</option>
+    </select>
+
+    <select id="mandalSelect">
+        <option value="">Select Mandal</option>
+    </select>
+
+    <button onclick="searchExperts()" class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Search
+    </button>
+</div>
+
+<div id="loading" class="loading">Loading experts...</div>
+
+<div id="expertContainer" class="expert-grid"></div>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h2>Call Booking Successful</h2>
+        <p id="bookingMessage"></p>
+        <button onclick="closeModal()" class="ok-btn">OK</button>
+    </div>
+</div>
+
+<script src="js/expert.js"></script>
+</body>
+</html>

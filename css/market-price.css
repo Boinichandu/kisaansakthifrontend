@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f4f8f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:25px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:950px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.header{
+
+    background:linear-gradient(135deg,#2e7d32,#4caf50);
+
+    color:white;
+
+    padding:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.header h1{
+
+    font-size:30px;
+
+}
+
+.back-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#2e7d32;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.search-box{
+
+    margin:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#f5f5f5;
+
+    border-radius:10px;
+
+    padding:12px 15px;
+
+}
+
+.search-box i{
+
+    color:#2e7d32;
+
+    margin-right:10px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    background:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.table-container{
+
+    margin:25px;
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#2e7d32;
+
+    color:white;
+
+}
+
+th,td{
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+tbody tr:hover{
+
+    background:#e8f5e9;
+
+    transition:.3s;
+
+}
+
+.refresh-btn{
+
+    width:250px;
+
+    display:block;
+
+    margin:30px auto;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#2e7d32;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.refresh-btn:hover{
+
+    background:#1b5e20;
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.header h1{
+
+    font-size:24px;
+
+}
+.market-card{
+
+    width:90%;
+
+    margin:25px auto;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.market-card h2{
+
+    color:#2e7d32;
+
+    margin-bottom:5px;
+
+}
+
+.district{
+
+    color:#777;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+}
+
+.market-card table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.market-card th{
+
+    background:#2e7d32;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+.market-card td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+.market-card tr:hover{
+
+    background:#f5f5f5;
+
+}
+
+}

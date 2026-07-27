@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subsidy Details | Kisan Sakthi</title>
+
+    <link rel="stylesheet" href="css/subsidy-details.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <button class="back-btn" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <h1>Kisan Sakthi</h1>
+
+    </header>
+
+    <!-- ================= BANNER ================= -->
+
+    <section class="banner">
+
+        <h2 id="schemeName">Loading...</h2>
+
+        <p id="category"></p>
+
+    </section>
+
+    <!-- ================= PRICE DETAILS ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-indian-rupee-sign"></i> Price Details</h3>
+
+        <div class="price-grid">
+
+            <div class="price-card">
+
+                <span>Government Subsidy</span>
+
+                <h2 id="governmentRate">₹0</h2>
+
+            </div>
+
+            <div class="price-card">
+
+                <span>Market Price</span>
+
+                <h2 id="marketRate">₹0</h2>
+
+            </div>
+
+            <div class="price-card">
+
+                <span>Farmer Pays</span>
+
+                <h2 id="farmerPrice">₹0</h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOCATION ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-location-dot"></i> Available Location</h3>
+
+        <div class="info-card">
+
+            <p><strong>District :</strong> <span id="district"></span></p>
+
+            <p><strong>Mandal :</strong> <span id="mandal"></span></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DATES ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-calendar-days"></i> Application Dates</h3>
+
+        <div class="info-card">
+
+            <p><strong>Start Date :</strong> <span id="startDate"></span></p>
+
+            <p><strong>Last Date :</strong> <span id="lastDate"></span></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ELIGIBILITY ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-user-check"></i> Eligibility</h3>
+
+        <div class="info-card">
+
+            <p id="eligibility"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DOCUMENTS ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-file-lines"></i> Required Documents</h3>
+
+        <div class="info-card">
+
+            <ul id="documentsList">
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DESCRIPTION ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-circle-info"></i> Description</h3>
+
+        <div class="info-card">
+
+            <p id="description"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section">
+
+        <h3><i class="fa-solid fa-headset"></i> Need Help?</h3>
+
+        <div class="info-card">
+
+            <p>📞 Toll Free : <strong>1800-425-3555</strong></p>
+
+            <p>✉ Email : <strong>agriculture@telangana.gov.in</strong></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= APPLY ================= -->
+
+    <div class="apply-container">
+
+        <button class="apply-btn">
+
+            Apply Now
+
+        </button>
+
+    </div>
+
+    <script src="js/subsidy-details.js"></script>
+
+</body>
+
+</html>

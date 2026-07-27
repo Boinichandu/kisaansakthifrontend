@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#e7b35a;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+
+    width:1000px;
+    height:620px;
+
+    display:flex;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* LEFT */
+
+.left{
+
+    width:50%;
+
+    padding:45px;
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#1f7a36;
+
+    margin-bottom:40px;
+}
+
+.logo span{
+
+    color:#1f7a36;
+}
+
+.left h3{
+
+    font-size:30px;
+
+    margin-bottom:5px;
+}
+
+.left p{
+
+    color:gray;
+
+    margin-bottom:30px;
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+input{
+
+    padding:13px;
+
+    border:1px solid #d4d4d4;
+
+    border-radius:8px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+input:focus{
+
+    border-color:#1f7a36;
+}
+
+button{
+
+    background:#1f7a36;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#17662c;
+}
+
+.login{
+
+    margin-top:25px;
+
+    text-align:center;
+}
+
+.login a{
+
+    text-decoration:none;
+
+    color:#1f7a36;
+
+    font-weight:600;
+}
+
+/* RIGHT */
+
+.right{
+
+    width:50%;
+
+    background:#1f7a36;
+
+    color:white;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.right::before{
+
+    content:"";
+
+    width:230px;
+
+    height:230px;
+
+    background:#2d8d43;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:-80px;
+
+    right:-60px;
+}
+
+.right::after{
+
+    content:"";
+
+    width:300px;
+
+    height:300px;
+
+    background:#2d8d43;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    bottom:-120px;
+
+    left:-90px;
+}
+
+.top-logo{
+
+    position:absolute;
+
+    top:30px;
+
+    right:35px;
+
+    font-weight:600;
+}
+
+.tractor{
+
+    width:220px;
+
+    z-index:2;
+
+    margin-bottom:30px;
+}
+
+.right h2{
+
+    z-index:2;
+
+    margin-bottom:15px;
+}
+
+.right p{
+
+    width:75%;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    z-index:2;
+}
