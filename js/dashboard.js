@@ -2,7 +2,7 @@
 // KISAN SAKTHI DASHBOARD
 // =============================================
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://kisaansakthibackend-4.onrender.com";
 
 // =============================================
 // PAGE LOAD

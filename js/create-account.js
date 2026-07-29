@@ -24,7 +24,7 @@ form.addEventListener("submit", async function (event) {
 
     try {
 
-        const response = await fetch("http://localhost:8080/users/register", {
+        const response = await fetch("https://kisaansakthibackend-4.onrender.com/users/register", {
 
             method: "POST",
 

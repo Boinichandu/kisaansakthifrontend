@@ -2,7 +2,7 @@
 // KISAN SAKTHI - FARMING TIPS
 // =====================================
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://kisaansakthibackend-4.onrender.com";
 
 const cropSelect = document.getElementById("cropSelect");
 const tipsContainer = document.getElementById("tipsContainer");

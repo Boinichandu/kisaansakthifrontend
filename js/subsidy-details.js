@@ -2,7 +2,7 @@
 // KISAN SAKTHI - SUBSIDY DETAILS
 // ============================================
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://kisaansakthibackend-4.onrender.com";
 
 // ============================================
 // GET SUBSIDY ID FROM URL
