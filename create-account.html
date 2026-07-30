@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Create Account | Kisan Sakthi</title>
 
     <link rel="stylesheet" href="css/create-account.css">
@@ -16,51 +18,70 @@
 
     <div class="container">
 
-        <!-- Left Side -->
+        <!-- ================= LEFT SIDE ================= -->
         <div class="left">
 
+            <!-- Logo -->
             <div class="logo">
-                🌾 <span>Kisaan Sakthi</span>
+                🌾 <span>Kisan Sakthi</span>
             </div>
 
             <h3>Create Account</h3>
+
             <p>Join India's Smart Farming Platform</p>
 
+            <!-- Registration Form -->
             <form id="registerForm">
 
+                <!-- Full Name -->
                 <input type="text" id="name" placeholder="Full Name" required>
 
+                <!-- Email -->
                 <input type="email" id="email" placeholder="Email Address" required>
 
-                <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                <!-- Mobile -->
+                <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
 
+                <!-- Password -->
                 <input type="password" id="password" placeholder="Password" required>
 
+                <!-- Confirm Password -->
                 <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
 
-                <button type="submit">Create Account</button>
+                <!-- Create Account -->
+                <button type="submit" class="create-btn">
+                    Create Account
+                </button>
+
+                <!-- Login Section -->
+                <div class="login">
+                    <span>Already have an account?</span>
+
+                    <button type="button" class="login-btn" onclick="location.href='login.html'">
+                        Login
+                    </button>
+                </div>
 
             </form>
 
-            <div class="login">
-                Already have an account?
-                <button type="button" class="login-btn" onclick="location.href='login.html'">Login</button>
-            </div>
-
         </div>
 
-        <!-- Right Side -->
 
+        <!-- ================= RIGHT SIDE ================= -->
         <div class="right">
 
+            <!-- Top Logo -->
             <div class="top-logo">
                 🌾 Kisan Sakthi
             </div>
 
+            <!-- Tractor Image -->
             <img src="https://cdn-icons-png.flaticon.com/512/628/628324.png" class="tractor" alt="Tractor">
 
+            <!-- Heading -->
             <h2>Empowering Farmers</h2>
 
+            <!-- Description -->
             <p>
                 Smart farming made easy with AI disease detection,
                 weather forecasting and crop recommendations.
@@ -70,8 +91,11 @@
 
     </div>
 
+
+    <!-- JavaScript -->
     <script src="js/create-account.js"></script>
 
 </body>
 
 </html>
+```

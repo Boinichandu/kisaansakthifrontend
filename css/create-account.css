@@ -1,250 +1,439 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Poppins,sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
-body{
+body {
 
-    background:#e7b35a;
+    background: #e7b35a;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    height:100vh;
+    height: 100vh;
 }
 
-.container{
+.container {
 
-    width:1000px;
-    height:620px;
+    width: 1000px;
+    height: 620px;
 
-    display:flex;
+    display: flex;
 
-    background:white;
+    background: white;
 
-    border-radius:15px;
+    border-radius: 15px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
 
 }
 
 /* LEFT */
 
-.left{
+.left {
 
-    width:50%;
+    width: 50%;
 
-    padding:45px;
+    padding: 45px;
 }
 
-.logo{
+.logo {
 
-    font-size:28px;
+    font-size: 28px;
 
-    font-weight:700;
+    font-weight: 700;
 
-    color:#1f7a36;
+    color: #1f7a36;
 
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
-.logo span{
+.logo span {
 
-    color:#1f7a36;
+    color: #1f7a36;
 }
 
-.left h3{
+.left h3 {
 
-    font-size:30px;
+    font-size: 30px;
 
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
-.left p{
+.left p {
 
-    color:gray;
+    color: gray;
 
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-form{
+form {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:18px;
+    gap: 18px;
 }
 
-input{
+input {
 
-    padding:13px;
+    padding: 13px;
 
-    border:1px solid #d4d4d4;
+    border: 1px solid #d4d4d4;
 
-    border-radius:8px;
+    border-radius: 8px;
 
-    outline:none;
+    outline: none;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-input:focus{
+input:focus {
 
-    border-color:#1f7a36;
+    border-color: #1f7a36;
 }
 
-button{
+button {
 
-    background:#1f7a36;
+    background: #1f7a36;
 
-    color:white;
+    color: white;
 
-    border:none;
+    border: none;
 
-    padding:14px;
+    padding: 14px;
 
-    border-radius:8px;
+    border-radius: 8px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    font-size:16px;
+    font-size: 16px;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-button:hover{
+button:hover {
 
-    background:#17662c;
+    background: #17662c;
 }
 
-.login{
+.login {
 
-    margin-top:25px;
+    margin-top: 25px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.login-btn{
-    background:transparent;
-    border:2px solid #1f7a36;
-    color:#1f7a36;
-    padding:8px 20px;
-    border-radius:8px;
-    font-size:14px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
+.login-btn {
+    background: transparent;
+    border: 2px solid #1f7a36;
+    color: #1f7a36;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.login-btn:hover{
-    background:#1f7a36;
-    color:white;
+.login-btn:hover {
+    background: #1f7a36;
+    color: white;
 }
 
 /* RIGHT */
 
-.right{
+.right {
 
-    width:50%;
+    width: 50%;
 
-    background:#1f7a36;
+    background: #1f7a36;
 
-    color:white;
+    color: white;
 
-    position:relative;
+    position: relative;
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.right::before{
+.right::before {
 
-    content:"";
+    content: "";
 
-    width:230px;
+    width: 230px;
 
-    height:230px;
+    height: 230px;
 
-    background:#2d8d43;
+    background: #2d8d43;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    position:absolute;
+    position: absolute;
 
-    top:-80px;
+    top: -80px;
 
-    right:-60px;
+    right: -60px;
 }
 
-.right::after{
+.right::after {
 
-    content:"";
+    content: "";
 
-    width:300px;
+    width: 300px;
 
-    height:300px;
+    height: 300px;
 
-    background:#2d8d43;
+    background: #2d8d43;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    position:absolute;
+    position: absolute;
 
-    bottom:-120px;
+    bottom: -120px;
 
-    left:-90px;
+    left: -90px;
 }
 
-.top-logo{
+.top-logo {
 
-    position:absolute;
+    position: absolute;
 
-    top:30px;
+    top: 30px;
 
-    right:35px;
+    right: 35px;
 
-    font-weight:600;
+    font-weight: 600;
 }
 
-.tractor{
+.tractor {
 
-    width:220px;
+    width: 220px;
 
-    z-index:2;
+    z-index: 2;
 
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.right h2{
+.right h2 {
 
-    z-index:2;
+    z-index: 2;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-.right p{
+.right p {
 
-    width:75%;
+    width: 75%;
 
-    text-align:center;
+    text-align: center;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    z-index:2;
+    z-index: 2;
 }
+
+```css * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7f2;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.left {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 10%;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+.left h3 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.left>p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* ================= FORM ================= */
+
+#registerForm {
+    width: 100%;
+    max-width: 450px;
+}
+
+#registerForm input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#registerForm input:focus {
+    border-color: #2e7d32;
+}
+
+/* ================= CREATE BUTTON ================= */
+
+.create-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background: #1b5e20;
+}
+
+/* ================= LOGIN ================= */
+
+.login {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-btn {
+    background: transparent;
+    border: none;
+    color: #2e7d32;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.right {
+    width: 50%;
+    background: #e8f5e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.top-logo {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.tractor {
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.right h2 {
+    font-size: 32px;
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.right p {
+    max-width: 450px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        padding: 40px 25px;
+    }
+
+    .right {
+        min-height: 400px;
+        padding: 40px 25px;
+    }
+
+    .top-logo {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .right h2 {
+        font-size: 26px;
+    }
+
+    .tractor {
+        width: 140px;
+    }
+}
+
+```
