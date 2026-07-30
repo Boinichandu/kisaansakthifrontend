@@ -127,16 +127,27 @@ button:hover{
 
     margin-top:25px;
 
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
 }
 
-.login a{
-
-    text-decoration:none;
-
+.login-btn{
+    background:transparent;
+    border:2px solid #1f7a36;
     color:#1f7a36;
-
+    padding:8px 20px;
+    border-radius:8px;
+    font-size:14px;
     font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1f7a36;
+    color:white;
 }
 
 /* RIGHT */
