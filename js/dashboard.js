@@ -2,7 +2,15 @@
 // KISAN SAKTHI DASHBOARD
 // =============================================
 
-const BASE_URL = "https://kisaansakthibackend-4.onrender.com";
+const BASE_URL = "https://kisaanshakthibackend-4.onrender.com";
+
+// =============================================
+// ML MODEL API
+// =============================================
+
+const ML_API_URL = "https://kisaanshakthi-ml.onrender.com";
+
+const ML_PREDICT_URL = `${ML_API_URL}/predict`;
 
 // =============================================
 // PAGE LOAD
@@ -134,7 +142,9 @@ function setupSearch() {
 
     const input = document.getElementById("searchInput");
 
-    const cards = document.querySelectorAll(".service-card, .summary-card");
+    const cards = document.querySelectorAll(
+        ".service-card, .summary-card"
+    );
 
     input.addEventListener("keyup", () => {
 
