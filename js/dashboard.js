@@ -7,8 +7,7 @@ const BASE_URL = "https://kisaanshakthibackend-4.onrender.com";
 // =============================================
 // ML MODEL API
 // =============================================
-
-const ML_API_URL = "https://kisaanshakthi-ml.onrender.com";
+const ML_API_URL = "https://kisaanshakthi-ml.onrender.com/docs";
 
 const ML_PREDICT_URL = `${ML_API_URL}/predict`;
 
@@ -29,7 +28,6 @@ window.onload = () => {
     setupLogout();
 
 };
-
 // =============================================
 // LOAD USER
 // =============================================
